@@ -1,0 +1,267 @@
+
+body {
+    background-color: #202020 !important;
+    max-width: 1440px;
+    margin: auto !important;
+}
+
+.header {
+    height: 80px;
+}
+
+.col {
+    align-items: center;
+}
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    box-shadow: 0 5px 10px #efefef;
+
+    background-image: url(backgorund.jpg);
+}
+
+
+.logo {
+    height: 50px;
+    padding: auto ;
+    text-align: left;
+    float: left;
+}
+
+.cart {
+    height: 50px;
+    padding: auto ;
+    text-align: right !important;
+    float: right !important;
+}
+
+
+.features {
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.table {
+    
+    background-color: #202020;
+    border: #efefef 5px solid;
+}
+/* .icon-bar {
+    background-color: orangered;
+    
+} */
+
+.productTitle {
+
+    color: whitesmoke !important; 
+}
+
+.nav li a {
+    color: rgb(79, 79, 252) ;
+    /* background-color: antiquewhite; */
+}
+
+.products {
+
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.footerLogo {
+    width: 50px;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #202020;
+    padding: 10px;
+}
+
+.footer {
+
+    background-color: #202020;
+}
+
+.copyright {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.p-small {
+    color: rgb(79, 79, 252);
+}
+
+.search {
+    float: right !important;
+}
+.input-group {
+    margin: 0;
+    padding: 0;
+    float: right;
+    text-align: center;
+}
+
+
+.navbar-nav li:hover a {
+    color: orangered !important;
+}
+
+.footerNav li:hover a {
+    color: orangered !important;
+}
+
+
+.content h1 {
+    font-size: 300px;
+    color: orangered;
+    font-weight: 600;
+    
+}
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color:blue;
+    font: 26px;
+    border: 2px solid;
+    border-radius: 50px;
+    margin-top: 100;
+}
+.form-text {
+    color: rgb(79, 79, 252) !important;
+}
+label {
+    color: rgb(79, 79, 252) ;
+}
+.Text7 {
+    color: rgb(79, 79, 252) ;
+}
+.tableH {
+    color:antiquewhite ;
+}
+.ForMore {
+    color: orangered !important;
+    border-radius: 10px;
+    background-color: #202020;
+}
+.ForMore:hover {
+    color: #202020 !important;
+    background-color: orangered;
+}
+
+
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("vintage3.jpg");
+  
+    /* Set a specific height */
+    height: 700px;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .productCard {
+    /* padding: 50px; */
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+  }
+  
+  .productCard:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .Clog {
+      color: whitesmoke;
+  }
+  .productCard {
+      color: whitesmoke;
+  }
+  .Stock {
+      color: whitesmoke;
+  }
+  .card-body {
+      transition: transform .2s;
+      margin: auto;
+      background-color: beige;
+  }
+  .productItem:hover {
+    transform: scale(1.5);
+  }
+  .productItem {
+      border: 3px solid;
+  }
+  .container1 {
+      border: 5px solid rgb(17, 57, 238);
+      background-color: beige;
+  }
+.d-block {
+    text-align: center;
+}
+.justify-content-center .round {
+    background-color: #202020;
+}
+.Shippingbody {
+    animation: ;
+}
+.d-block { 
+	animation-name: backgroundColorPalette;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: #ee6055;
+	}
+	25% {
+		background: #60d394;
+	}
+	50% {
+		background: #aaf683;
+	}
+	75% {
+		background: #ffd97d;
+	}
+	100% {
+		background: #ff9b85; 
+	}
+}
+.ulT7 {
+    margin: auto;
+    padding:0 ;
+    text-align: center;
+}
+.ulT7 li:hover a {
+    color: orangered;
+}
+.btn7 {
+    background-color: rgb(17, 57, 238);
+    color: whitesmoke;
+}
+.btn7:hover  {
+    color: orangered ;
+    background-color: rgb(18, 19, 19); 
+}

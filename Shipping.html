@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Aspire Shopping</title>
+		<link rel="stylesheet" href="styleT7.css">
+		<link rel="stylesheet" link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/path/to/bootstrap.min.css">
+
+	
+	
+	</head>
+
+<body>
+	<header class="header">
+		<!-- Navbar for referencing -->
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="indexT7.html"><img class="logo" src="g111.png" alt="Logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+
+
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto" id="catNav">
+				<li class="nav-item active">
+				  <a class="nav-link" href="indexT7.html">Home </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="CatalogueT7.html">Catalogue</a>
+				  <ul id="ulHov">
+					<li><a href="CatalogueT7.html">In stock</a></li>
+					<li><a href="#">Incoming</a></li>
+					<li><a href="indexT7.html#featuresD">Trending</a></li>
+				   
+				  </ul>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="Shipping.html">Shipping</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="AboutT7.html">About</a>
+				</li>
+			  </ul>
+			</div>
+
+			<div class="row">
+				<div class="col">
+				  
+				  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><i class="fa fa-shopping-cart"></i> (<span class="total-count"></span>)</button>
+				  <button class="clear-cart btn btn-danger">Clear Cart</button></div>
+			  </div>
+		
+	</header>
+    <section id="secPay">
+	
+		<div id="Div7" class="d-block my-3">
+			<h1 style="color: orangered; font-family:Georgia; text-align: center;">Shipping Details</h1>
+			<p style="color: orangered; font-family: cursive; text-align: center;">We have partnered with the top courier companies in South Africa and we do nation wide deliveries. <br>
+			Our aim is to ensure that your packages gets delivered to your doorstep as quick as possible and without any hassles. <br>
+			We are situated in Crawford, Cape Town, South Africa,7780. <br>
+			Packages are sealed and sent off to the couriers on the same day we receive payment. <br></p>
+			<h3 style="color: orangered; font-family: Georgia; text-align: center;">Our reliable delivery companies:</h3>
+			<ul class="ulT7">
+				<!-- Hlinks to company websites -->
+				<li><a href="https://www.thecourierguy.co.za/" target="_blank">The Courier Guy</a></li>
+				<li><a href="https://www.dhl.com/za-en/home.html" target="_blank">DHL</a></li>
+				<li><a href="http://www.mycouriersa.co.za/" target="_blank">My Courier</a></li>
+			</ul>
+			
+			<hr style="color:whitesmoke;">
+			<h3 style="color: orangered; font-family: Georgia; text-align: center;">We accept payments via:</h3>
+			<!-- radio button for payment option -->
+		  <div class="custom-control custom-radio">
+			<input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+			<label class="custom-control-label" for="credit">Credit card</label>
+		  </div>
+		  <div class="custom-control custom-radio">
+			<input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+			<label class="custom-control-label" for="debit">Debit card</label>
+		  </div>
+		  <div class="custom-control custom-radio">
+			<input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+			<label class="custom-control-label" for="paypal">Paypal</label>
+		  </div>
+		  <button type="button" class="btn7  btn-sm" id="paymentSel">Select</button>
+		</div>
+		<hr style="color: whitesmoke;">
+
+    
+<!-- MODAL -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <table class="show-cart table">
+			
+		  </table>
+		  <!-- <form class="promo-form ">
+			<div class="input-group">
+			  <input type="text" class="form-control" placeholder="Promo code">
+			  <div class="input-group-append">
+				<button class="redeem-btn btn btn-secondary">Redeem</button>
+				<input type="button" class="btn btn-primary btnSeccion" id="btnSeccion3" value="Redeem"/>
+
+			  </div>
+			</div>
+		  </form> -->
+
+		  <div class="form-group">
+			<label for="shippingOptions">Shipping</label>
+			<select class="form-control" id="exampleFormControlSelect1">
+			  <option>Standard Shipping</option>
+			  <option>Collection at Nearest Warehouse</option>
+			</select>
+		  </div>
+
+		  <div class="Promo-Added" style="display: none;">
+			<h3>
+			  Promo Code Valid <i class="fa fa-check"></i>
+			</h3>
+		  </div>
+		  <div>Sub Total: R<span class="sub-total"></span></div>
+		  <div>Vat: R<span class="total-vat"></span></div>
+		  <div>Total price: R<span class="total-cart"></span></div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <a href="shoppingCart.html"><button type="button" class="btn btn-primary">Order now</button></a>
+
+		</div>
+	  </div>
+	</div>
+  </div> 
+	
+
+
+
+
+	<!-- Footer -->
+		<footer class="footer">
+
+		<div class="grid-container">
+			<div class="grid-item">
+				<a class="footerLogo" href="indexT7.html"><img class="logo" src="g111.png" alt="Logo"></a>
+
+			</div>
+			<!-- Added another grid for easy links to the other pages. -->
+			<div class="grid-item">
+				<ul class="footerNav">
+					<li><a class="footerLinks" href="indexT7.html">Home</a></li>
+					<li><a class="footerLinks" href="CatalogueT7.html">Catalogue</a></li>
+					<li><a class="footerLinks" href="Shipping.html">Shipping</a></li>
+					<li><a class="footerLinks" href="AboutT7.html">About</a></li>
+				</ul>
+			</div>
+			<div class="grid-item">
+				<div class="contactT7">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<!-- Copy Rights Tag -->
+						<p class="p-small">Copyright © 2020, All Rights Reserved <a href=""></a></p>
+					</div> <!-- end of col -->
+				</div> <!-- enf of row -->
+			</div> <!-- end of container -->
+		</div> <!-- end of copyright --> 
+	</footer>
+
+
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="task15Cap.js"></script>
+</body>
+
+</html>
